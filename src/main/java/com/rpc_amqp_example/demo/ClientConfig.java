@@ -19,7 +19,7 @@ public class ClientConfig {
     }
 
     @Bean
-    public RabbitTemplate rabbitTemplate() {
+    public RabbitTemplate template() {
         RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory());
         // rabbitTemplate.setRoutingKey();
         return rabbitTemplate;
